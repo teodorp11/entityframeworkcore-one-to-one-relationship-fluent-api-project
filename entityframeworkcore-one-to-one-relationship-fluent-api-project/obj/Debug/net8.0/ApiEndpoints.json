@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "entityframeworkcore_one_to_one_relationship_example_project.Controllers.TestController",
+    "Method": "AddCarCompany",
+    "RelativePath": "api/Test/add-company",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carCompany",
+        "Type": "entityframeworkcore_one_to_one_relationship_example_project.Models.CarCompany",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "entityframeworkcore_one_to_one_relationship_example_project.Controllers.TestController",
+    "Method": "AddModel",
+    "RelativePath": "api/Test/add-model",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carModel",
+        "Type": "entityframeworkcore_one_to_one_relationship_example_project.Models.CarModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "entityframeworkcore_one_to_one_relationship_example_project.Controllers.TestController",
+    "Method": "GetCarCompanies",
+    "RelativePath": "api/Test/get-companies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "entityframeworkcore_one_to_one_relationship_example_project.Controllers.TestController",
+    "Method": "GetCarModels",
+    "RelativePath": "api/Test/get-models",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

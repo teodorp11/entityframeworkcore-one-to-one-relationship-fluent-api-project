@@ -1,5 +1,8 @@
+using entityframeworkcore_one_to_one_relationship_example_project.Data;
+using entityframeworkcore_one_to_one_relationship_example_project.Repo;
+using Microsoft.EntityFrameworkCore;
 
-namespace entityframeworkcore_one_to_one_relationship_fluent_api_project
+namespace entityframeworkcore_one_to_one_relationship_example_project
 {
     public class Program
     {
@@ -13,6 +16,8 @@ namespace entityframeworkcore_one_to_one_relationship_fluent_api_project
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddScoped<Repository>();
 
             var app = builder.Build();
 
